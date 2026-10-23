@@ -1,0 +1,11 @@
+.ghosttype-ghost {
+  color: var(--text-faint);
+  white-space: pre;
+}
+
+/* Checker findings. Dotted, not solid: it is a suggestion to look at, not an
+   error the editor has decided about. Click opens the replace/ignore menu. */
+.ghosttype-issue {
+  border-bottom: 2px dotted var(--text-error);
+  cursor: pointer;
+}

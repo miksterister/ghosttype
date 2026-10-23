@@ -1,0 +1,9 @@
+{
+  "id": "ghosttype-inline",
+  "name": "GhostType Inline",
+  "version": "0.4.0",
+  "minAppVersion": "1.4.0",
+  "description": "Inline ghost-text completion from the local GhostType FIM server (127.0.0.1:8790). Tab accepts, Escape dismisses.",
+  "author": "Michael Menzi",
+  "isDesktopOnly": true
+}

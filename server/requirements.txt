@@ -1,0 +1,9 @@
+# Pinned to the versions verified working: newer mlx (0.32+) raises
+# "no Stream(gpu, 0) in current thread" when generating from FastAPI's threadpool.
+# Then: pip install "transformers<5" (mlx-lm 0.31.3 declares >=5 but crashes on it;
+# start_server.sh does this for you).
+mlx==0.31.2
+mlx-metal==0.31.2
+mlx-lm==0.31.3
+fastapi==0.139.0
+uvicorn==0.51.0

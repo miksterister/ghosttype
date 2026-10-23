@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>GHOSTTYPE_SPELL_BACKEND</key>
+		<string>ollama</string>
+		<key>GHOSTTYPE_SPELL_OLLAMA_MODEL</key>
+		<string>gemma4:e4b-mlx</string>
+		<key>GHOSTTYPE_SPELL_MODEL</key>
+		<string>LiquidAI/LFM2.5-Encoder-350M-Spellchecker</string>
+		<key>GHOSTTYPE_SPELL_PORT</key>
+		<string>8791</string>
+		<key>GHOSTTYPE_SPELL_MIN_ERROR_PROB</key>
+		<string>0.7</string>
+		<key>GHOSTTYPE_SPELL_DIALECT</key>
+		<string>british</string>
+		<key>GHOSTTYPE_SPELL_THREADS</key>
+		<string>4</string>
+	</dict>
+	<key>Label</key>
+	<string>com.local.ghosttype-spellcheck</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>__REPO__/server/start_spellcheck.sh</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StandardErrorPath</key>
+	<string>__HOME__/Library/Logs/ghosttype-spellcheck.err.log</string>
+	<key>StandardOutPath</key>
+	<string>__HOME__/Library/Logs/ghosttype-spellcheck.out.log</string>
+	<key>ThrottleInterval</key>
+	<integer>10</integer>
+	<key>WorkingDirectory</key>
+	<string>__REPO__</string>
+</dict>
+</plist>
